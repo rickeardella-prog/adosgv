@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADO/SGV — Association of Development Officers, San Gabriel Valley</title>
+  <meta name="description" content="ADO/SGV is a peer group of nonprofit development officers across the San Gabriel Valley: practical fundraising conversation, shared experience, and good company, every other month.">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1E3A5F; --sage: #7C9163; --sky: #7395B5; --marigold: #E9A63C;
+      --paper: #FBF9F4; --ink: #26304A; --ink-dim: rgba(38, 48, 74, 0.72);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Inter", system-ui, sans-serif; background: var(--paper); color: var(--ink); line-height: 1.6; }
+    h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; color: var(--navy); line-height: 1.2; }
+    .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+    header { text-align: center; padding: 64px 0 40px; }
+    header img { width: 340px; max-width: 80%; height: auto; }
+    header p.tag { font-size: 1.12rem; color: var(--ink-dim); max-width: 560px; margin: 18px auto 0; }
+
+    .band { padding: 44px 0; }
+    .band-alt { background: #F2EEE3; }
+    .eyebrow { display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--marigold); margin-bottom: 10px; }
+    .band h2 { font-size: 1.7rem; margin-bottom: 14px; }
+    .band p { color: var(--ink-dim); max-width: 640px; }
+    .band p + p { margin-top: 12px; }
+
+    .meeting-card { margin-top: 22px; background: #fff; border-left: 5px solid var(--sage); border-radius: 10px; padding: 22px 26px; box-shadow: 0 2px 12px rgba(30, 58, 95, 0.07); }
+    .meeting-card strong { color: var(--navy); font-size: 1.06rem; }
+    .meeting-card span { display: block; color: var(--ink-dim); font-size: 0.95rem; margin-top: 4px; }
+
+    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 20px; }
+    .col-card { background: #fff; border-radius: 10px; padding: 24px; box-shadow: 0 2px 12px rgba(30, 58, 95, 0.07); border-top: 4px solid var(--sky); }
+    .col-card:last-child { border-top-color: var(--marigold); }
+    .col-card h3 { font-size: 1.15rem; margin-bottom: 8px; }
+    .col-card p { font-size: 0.95rem; }
+
+    .btn { display: inline-block; margin-top: 18px; background: var(--navy); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 12px 26px; border-radius: 8px; }
+    .btn:hover { background: #2A4C7A; }
+
+    footer { background: var(--navy); color: rgba(251, 249, 244, 0.85); padding: 30px 0; margin-top: 48px; font-size: 0.88rem; }
+    footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+    footer a { color: #fff; }
+    footer .credit a { color: var(--marigold); text-decoration: none; }
+
+    @media (max-width: 640px) { .cols { grid-template-columns: 1fr; } header { padding-top: 40px; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="ADO/SGV — Association of Development Officers, San Gabriel Valley">
+      <p class="tag">A peer group of nonprofit development professionals across the San Gabriel Valley. Real fundraising conversation, shared experience, and good company.</p>
+    </div>
+  </header>
+
+  <section class="band">
+    <div class="container">
+      <span class="eyebrow">Who we are</span>
+      <h2>Fundraisers, in the same room, on purpose.</h2>
+      <p>ADO/SGV brings together development directors, officers, and nonprofit fundraising staff from organizations across the San Gabriel Valley. No dues, no formality for its own sake: a standing table where the people who do this work trade what actually works, workshop what is hard, and know each other before they need each other.</p>
+      <p>The breadth of experience in the group is the point. Members span human services, health, education, youth development, and more, from one-person shops to established departments.</p>
+    </div>
+  </section>
+
+  <section class="band band-alt">
+    <div class="container">
+      <span class="eyebrow">Meetings</span>
+      <h2>Every other month, around the Valley.</h2>
+      <p>We meet on the third Wednesday of every other month at 3:00 PM, rotating between video calls and in-person gatherings hosted around the San Gabriel Valley.</p>
+      <div class="meeting-card">
+        <strong>Next meeting: Wednesday, September 16, 2026 — in person</strong>
+        <span>Location announced to members. Want in? Reach out below.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="container">
+      <span class="eyebrow">Membership</span>
+      <h2>Join the table.</h2>
+      <div class="cols">
+        <div class="col-card">
+          <h3>Who it's for</h3>
+          <p>Anyone doing nonprofit development work in or around the San Gabriel Valley: directors, officers, grant writers, ED-fundraiser hybrids, and the people about to become them.</p>
+        </div>
+        <div class="col-card">
+          <h3>What it costs</h3>
+          <p>Nothing. Show up, share what you know, ask what you need. The member roster is coming to this page soon.</p>
+        </div>
+      </div>
+      <a class="btn" href="mailto:george@secondstoryconsulting.com?subject=ADO/SGV%20membership">Ask about joining</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 ADO/SGV · Association of Development Officers, San Gabriel Valley</span>
+      <span class="credit">Site developed by <a href="https://secondstoryconsulting.com">Second Story Consulting</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>
