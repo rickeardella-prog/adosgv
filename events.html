@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events — ADO/SGV</title>
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1E3A5F; --sage: #7C9163; --sky: #7395B5; --marigold: #E9A63C;
+      --paper: #FBF9F4; --ink: #26304A; --ink-dim: rgba(38, 48, 74, 0.72);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Inter", system-ui, sans-serif; background: var(--paper); color: var(--ink); line-height: 1.6; }
+    h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; color: var(--navy); line-height: 1.2; }
+    .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+    nav.top { background: var(--navy); }
+    nav.top .container { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; }
+    nav.top .wm { color: #fff; font-family: "Source Serif 4", Georgia, serif; font-weight: 700; text-decoration: none; font-size: 1.05rem; }
+    nav.top .links a { color: rgba(251,249,244,0.85); text-decoration: none; font-size: 0.92rem; margin-left: 22px; font-weight: 500; }
+    nav.top .links a.on { color: var(--marigold); }
+    header.page { text-align: center; padding: 46px 0 8px; }
+    header.page h1 { font-size: 2rem; }
+    header.page p.tag { color: var(--ink-dim); max-width: 620px; margin: 12px auto 0; }
+    .band { padding: 36px 0; }
+    .eyebrow { display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--marigold); margin-bottom: 10px; }
+    .band h2 { font-size: 1.45rem; margin-bottom: 12px; }
+    .band p { color: var(--ink-dim); max-width: 680px; }
+    .band p + p { margin-top: 12px; }
+    .card { background: #fff; border-radius: 10px; padding: 22px 26px; box-shadow: 0 2px 12px rgba(30,58,95,0.07); border-left: 5px solid var(--sage); margin-top: 18px; }
+    .card strong { color: var(--navy); }
+    .card span { display: block; color: var(--ink-dim); font-size: 0.94rem; margin-top: 4px; }
+    ul.plain { list-style: none; margin-top: 14px; }
+    ul.plain li { padding: 10px 0; border-bottom: 1px solid rgba(30,58,95,0.1); color: var(--ink-dim); }
+    ul.plain li strong { color: var(--navy); font-size: 1.02rem; }
+    ul.plain li span.p { display: block; color: var(--ink-dim); font-size: 0.94rem; margin-top: 3px; }
+    ul.plain li a { color: var(--sky); }
+    .btn { display: inline-block; margin-top: 18px; background: var(--navy); color: #fff; text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 12px 26px; border-radius: 8px; }
+    footer { background: var(--navy); color: rgba(251,249,244,0.85); padding: 26px 0; margin-top: 48px; font-size: 0.88rem; }
+    footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+    footer a { color: #fff; }
+    footer .credit a { color: var(--marigold); text-decoration: none; }
+
+    h3 { margin: 26px 0 10px; font-size: 1.1rem; }
+    .tw { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; box-shadow: 0 2px 12px rgba(30,58,95,0.07); font-size: 0.92rem; }
+    th { text-align: left; padding: 10px 14px; background: var(--navy); color: #fff; font-weight: 600; white-space: nowrap; }
+    td { padding: 10px 14px; border-bottom: 1px solid rgba(30,58,95,0.1); color: var(--ink-dim); vertical-align: top; }
+    td.d { white-space: nowrap; color: var(--navy); font-weight: 500; }
+    td.e { color: var(--ink); font-weight: 500; }
+    td a { color: var(--sky); }
+  </style>
+</head>
+<body>
+  <nav class="top"><div class="container">
+    <a class="wm" href="index.html">ADO/SGV</a>
+    <span class="links"><a href="index.html">Home</a><a href="members.html">Members</a><a href="meetings.html">Meetings</a><a href="events.html" class="on">Events</a><a href="resources.html">Resources</a></span>
+  </div></nav>
+
+  <header class="page"><div class="container">
+    <h1>Events</h1>
+    <p class="tag">The shared calendar of San Gabriel Valley fundraising events. Before you book your gala date, look here first.</p>
+  </div></header>
+  <section class="band" style="padding-bottom:0;"><div class="container">
+    <span class="eyebrow">How this works</span>
+    <h2>One calendar, fewer collisions.</h2>
+    <p>Members share their event dates so we are not scheduling against each other, and so we can show up for each other's rooms. Event questions go to the host organization. To add an event, move a date, or fix a listing, email <a href="mailto:ado-sgv@doorofhope.us">ado-sgv@doorofhope.us</a>.</p>
+  </div></section>
+
+  <section class="band"><div class="container">
+    <span class="eyebrow">2026</span>
+    <h2>SGV fundraising events, 2026.</h2>
+        <h3>February 2026</h3>
+        <div class="tw"><table>
+          <tr><th>Date</th><th>Event</th><th>Organization</th><th>Location</th></tr>
+          <tr><td class="d">Sat · Feb 21</td><td class="e">Cars for Casa</td><td>San Marino Junior Alliance</td><td class="l">The Flying A Garage</td></tr>
+          <tr><td class="d">Sat · Feb 21</td><td class="e">Villa Day at the Races</td><td>Villa Esperanza Services</td><td class="l">Santa Antia Race Track</td></tr>
+          <tr><td class="d">Sun · Feb 22</td><td class="e"><a href="https://impacthouse.com/5k">Impact 5K:  Dash Thru the 80s</a></td><td>Impact Drug &amp; Alcohol Treatment Ctr.</td><td class="l">Hahamongna Watershed Park</td></tr>
+          <tr><td class="d">Thu · Feb 26</td><td class="e">Centennial Birthday Party</td><td>Foothill Family</td><td class="l">Annandale Golf Club</td></tr>
+          <tr><td class="d">Sat · Feb 28</td><td class="e">Hillsides Annual Gala 2026</td><td>Hillsides</td><td class="l">The Bonaventure Hotel &amp; Suites</td></tr>
+        </table></div>
+        <h3>March 2026</h3>
+        <div class="tw"><table>
+          <tr><th>Date</th><th>Event</th><th>Organization</th><th>Location</th></tr>
+          <tr><td class="d">Sat · Mar 21</td><td class="e">Casino Night</td><td>Amy&#x27;s Place</td><td class="l">Courtyard by Marriott Monrovia</td></tr>
+          <tr><td class="d">Thu · Mar 26</td><td class="e">Seeds of Hope</td><td>Foothill Unity Center, Inc.</td><td class="l">Courtyard by Marriott Monrovia</td></tr>
+          <tr><td class="d">Sat · Mar 28</td><td class="e">Annual Gala 2026</td><td>Sycamores</td><td class="l">Jonathan Club DTLA</td></tr>
+        </table></div>
+        <h3>April 2026</h3>
+        <div class="tw"><table>
+          <tr><th>Date</th><th>Event</th><th>Organization</th><th>Location</th></tr>
+          <tr><td class="d">Sat · Apr 11</td><td class="e">Annual Gala: Creating a Lasting Impact</td><td>Ascencia</td><td class="l">Oakmont Country Club, Glendale CA</td></tr>
+          <tr><td class="d">Thu · Apr 16</td><td class="e">PCF Legacy Luncheon</td><td>Pasadena Community Foundation</td><td class="l">U Club</td></tr>
+          <tr><td class="d">Sat · Apr 18</td><td class="e">ArtCenter 2026 Spring Gala</td><td>ArtCenter College of Design</td><td class="l">ArtCenter Hillside Campus, Pasadena</td></tr>
+          <tr><td class="d">Sun · Apr 19</td><td class="e">Hillsides Guild Day at the Races</td><td>Hillsides</td><td class="l">Santa Anita Park</td></tr>
+          <tr><td class="d">Sat · Apr 25</td><td class="e">Villa Annual Gala</td><td>Villa Esperanza Services</td><td class="l">Cal Club DTLA</td></tr>
+          <tr><td class="d">TBD</td><td class="e">Elizabeth House Gala</td><td>Elizabeth House</td><td class="l">TBD</td></tr>
+        </table></div>
+        <h3>May 2026</h3>
+        <div class="tw"><table>
+          <tr><th>Date</th><th>Event</th><th>Organization</th><th>Location</th></tr>
+          <tr><td class="d">Sat · May 2</td><td class="e">Families Forward Annual Soiree</td><td>Families Forward Learning Center</td><td class="l">University Club, Pasadena</td></tr>
+          <tr><td class="d">Mon · May 4</td><td class="e">45th Annual Golf Tournament</td><td>HEAR Center</td><td class="l">Red Hill Country Club, Rancho Cucamonga, CA</td></tr>
+          <tr><td class="d">Sat · May 16</td><td class="e">Foothill Family Centennial Gala</td><td>Foothill Family</td><td class="l">The Langham, Pasadena</td></tr>
+        </table></div>
+        <h3>June 2026</h3>
+        <div class="tw"><table>
+          <tr><th>Date</th><th>Event</th><th>Organization</th><th>Location</th></tr>
+          <tr><td class="d">Sat · Jun 6</td><td class="e">Golden Five Acres Gala</td><td>Five Acres</td><td class="l">Annandale Golf Club</td></tr>
+        </table></div>
+        <h3>July 2026</h3>
+        <div class="tw"><table>
+          <tr><th>Date</th><th>Event</th><th>Organization</th><th>Location</th></tr>
+          <tr><td class="d">Tue · Jul 21</td><td class="e">Legendary Bingo</td><td>Grandview Foundation</td><td class="l">Hamburger Mary&#x27;s, West Hollywood, CA</td></tr>
+          <tr><td class="d">Sat · Jul 25</td><td class="e">Flagship Health Center Grand Opening (for supporters)</td><td>PPPSGV</td><td class="l">620 N Lake Ave, Pasadena</td></tr>
+        </table></div>
+        <h3>August 2026</h3>
+        <div class="tw"><table>
+          <tr><th>Date</th><th>Event</th><th>Organization</th><th>Location</th></tr>
+          <tr><td class="d">Sun · Aug 16</td><td class="e">5th Annual Run For The Health of It 10k/5k</td><td>Grandview Foundation</td><td class="l">Hahamonga Watershed Park, La Canada</td></tr>
+          <tr><td class="d">Fri · Aug 21</td><td class="e">Flagship Health Center Open House (for comm. partners)</td><td>PPPSGV</td><td class="l">620 N Lake Ave, Pasadena</td></tr>
+          <tr><td class="d">Mon · Aug 24</td><td class="e">Annual Golf Tournament</td><td>Five Acres</td><td class="l">San Gabriel Country Club</td></tr>
+          <tr><td class="d">Thu · Aug 27</td><td class="e">Homo Happy Hour Drag Night</td><td>PP Advocates</td><td class="l">Blind Barber, Highland Park</td></tr>
+        </table></div>
+        <h3>September 2026</h3>
+        <div class="tw"><table>
+          <tr><th>Date</th><th>Event</th><th>Organization</th><th>Location</th></tr>
+          <tr><td class="d">Fri · Sep 18</td><td class="e">Team Up For Recovery Poker Tournament</td><td>Grandview Foundation</td><td class="l">La Casita Del Arroyo, Pasadena, CA</td></tr>
+          <tr><td class="d">Sat · Sep 19</td><td class="e">The Huntington Ball</td><td>The Huntington</td><td class="l">The Huntington</td></tr>
+          <tr><td class="d">Thu · Sep 24</td><td class="e">PAC Fundraiser</td><td>PP Advocates</td><td class="l">Castle Green, Pasadena</td></tr>
+          <tr><td class="d">9/12 - 9/26</td><td class="e">Team Tennis Charity Tournament</td><td>Union Station Homeless Services</td><td class="l">Toluca Lake Tennis &amp; Fitness Club</td></tr>
+        </table></div>
+        <h3>October 2026</h3>
+        <div class="tw"><table>
+          <tr><th>Date</th><th>Event</th><th>Organization</th><th>Location</th></tr>
+          <tr><td class="d">Sat · Oct 3</td><td class="e">Black Tie &amp; Burgers Gala</td><td>Boys &amp; Girls Club of Pasadena</td><td class="l">Raymond Theatre (Old Town Pasadena)</td></tr>
+          <tr><td class="d">Sat · Oct 3</td><td class="e">Hope for the Future Dinner</td><td>Door of Hope</td><td class="l">Oakmont Country Club</td></tr>
+          <tr><td class="d">Sat · Oct 3</td><td class="e">Brunch for the Station</td><td>Union Station Homeless Services</td><td class="l">Trinity Ballroom</td></tr>
+          <tr><td class="d">Sun · Oct 4</td><td class="e">Annual Garden Party</td><td>Convalescent Aid Society</td><td class="l">Valley Hunt Club</td></tr>
+          <tr><td class="d">Sat · Oct 10</td><td class="e">2nd Annual Pickleball Palooza</td><td>Young &amp; Healthy</td><td class="l">Arcadia</td></tr>
+          <tr><td class="d">Sat · Oct 10</td><td class="e">The Impact Gala</td><td>Impact Drug &amp; Alcohol Treatment Center</td><td class="l">The Wende Museum, Culver City</td></tr>
+          <tr><td class="d">Sat · Oct 10</td><td class="e">5K Walk Run</td><td>Ascencia</td><td class="l">Brand Park</td></tr>
+          <tr><td class="d">Fri · Oct 16</td><td class="e">Twilight Tasting</td><td>Families Forward Learning Center</td><td class="l">Families Forward Center</td></tr>
+          <tr><td class="d">Sat · Oct 17</td><td class="e">Fall Benefit</td><td>PPPSGV</td><td class="l">Private Pasadena home</td></tr>
+          <tr><td class="d">Thu · Oct 22</td><td class="e">Legacy of Hope Gala</td><td>Rancho San Antonio</td><td class="l">The Taglyan (Hollywood)</td></tr>
+          <tr><td class="d">Mon · Oct 26</td><td class="e">Tournament of Hope</td><td>Villa Esperanza Services</td><td class="l">San Gabriel Country Club</td></tr>
+          <tr><td class="d">Thu · Oct 29</td><td class="e">2nd Annual Comedy Night</td><td>Amy&#x27;s Place</td><td class="l">409 Woodbury Altedena</td></tr>
+          <tr><td class="d">mid-October</td><td class="e">Tip Your Cap &amp; Pass the Hat</td><td>Foothill Family</td><td class="l">TBD</td></tr>
+        </table></div>
+        <h3>November 2026</h3>
+        <div class="tw"><table>
+          <tr><th>Date</th><th>Event</th><th>Organization</th><th>Location</th></tr>
+          <tr><td class="d">11/18, 11/24, 11/25</td><td class="e">Dinner in the Park</td><td>Union Station Homeless Services</td><td class="l">USHS Adult Center - Pasadena</td></tr>
+        </table></div>
+        <h3>December 2026</h3>
+        <div class="tw"><table>
+          <tr><th>Date</th><th>Event</th><th>Organization</th><th>Location</th></tr>
+          <tr><td class="d">Thu · Dec 3</td><td class="e">Holiday Soiree and Dinner</td><td>4th Trimester</td><td class="l">Address Disclosed with RSVP</td></tr>
+        </table></div>
+  </div></section>
+  <section class="band"><div class="container">
+    <span class="eyebrow">2027</span>
+    <h2>SGV fundraising events, 2027.</h2>
+        <h3>February 2027</h3>
+        <div class="tw"><table>
+          <tr><th>Date</th><th>Event</th><th>Organization</th><th>Location</th></tr>
+          <tr><td class="d">Sat · Feb 27</td><td class="e">Hillsides Annual Gala 2027</td><td>Hillsides</td><td class="l">The Westin Bonaventure Hotel &amp; Suites, L.A.</td></tr>
+        </table></div>
+        <h3>April 2027</h3>
+        <div class="tw"><table>
+          <tr><th>Date</th><th>Event</th><th>Organization</th><th>Location</th></tr>
+          <tr><td class="d">Apr 17</td><td class="e">Villa&#x27;s Annual Gala</td><td>Villa Esperanza Services</td><td class="l">Cal Club</td></tr>
+          <tr><td class="d">Mon · Apr 19</td><td class="e">Hillsides Guild Day at the Races</td><td>Hillsides</td><td class="l">Santa Anita Park</td></tr>
+          <tr><td class="d">Sat · Apr 24</td><td class="e">Annual Soiree</td><td>Families Forward Learning Center</td><td class="l">University Club of Pasadena</td></tr>
+          <tr><td class="d">Sat · Apr 24</td><td class="e">Ascencia Annual Gala</td><td>Ascencia</td><td class="l">Oakmonth Country Club</td></tr>
+        </table></div>
+        <h3>May 2027</h3>
+        <div class="tw"><table>
+          <tr><th>Date</th><th>Event</th><th>Organization</th><th>Location</th></tr>
+          <tr><td class="d">Sat · May 1</td><td class="e">Annual Gala</td><td>Five Acres</td><td class="l">Annandale Golf Club</td></tr>
+          <tr><td class="d">Sat · May 15</td><td class="e">Annual Gala and Auction</td><td>Foothill Family</td><td class="l">Annandale Golf Club</td></tr>
+          <tr><td class="d">Sat · May 22</td><td class="e">Celebrating Children Gala</td><td>Sycamores</td><td class="l">Annandale Golf Club</td></tr>
+        </table></div>
+  </div></section>
+  <section class="band"><div class="container">
+    <div class="card"><strong>Have a date on the books?</strong>
+      <span>Send the event name, organization, date, and location and it goes on this calendar. Claiming your date early is how the calendar protects it.</span>
+    </div>
+    <a class="btn" href="mailto:ado-sgv@doorofhope.us?subject=ADO/SGV%20event%20calendar">Add my event</a>
+  </div></section>
+  <footer>
+    <div class="container">
+      <span>© 2026 ADO/SGV · Association of Development Officers, San Gabriel Valley</span>
+      <span class="credit">Site developed by <a href="https://secondstoryconsulting.com">Second Story Consulting</a></span>
+    </div>
+  </footer>
+</body>
+</html>
